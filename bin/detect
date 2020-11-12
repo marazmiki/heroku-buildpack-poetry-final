@@ -5,4 +5,5 @@
 # you use poetry. So we won't check the repo for compatibility 
 # with this buildpack, just say it's fit ;)
 
+echo "Finalize the building of your poetry powered python package"
 exit 0
