@@ -22,9 +22,10 @@ function indent() {
 source $HOME/.poetry/env
 
 # Install all the deps, including the main package declared in pyproject.toml
-poetry install
+poetry install --no-dev
 
 # These lines are temporary, will remove it after debugging
-which web 
-which release
+echo "Let's check ourselves: test if the project's scripts [web, release] are installed"
+which web || echo "Looks like web didn't installed"
+which release || echo "Looks like release didn't installed"
 
