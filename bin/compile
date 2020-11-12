@@ -21,8 +21,12 @@ function indent() {
 # Activate poetry 
 source $HOME/.poetry/env
 
+# We don't use virtualenv, just install everything into the system wide python!
+poetry config virtualenvs.create false
+
 # Install all the deps, including the main package declared in pyproject.toml
-poetry install --no-dev
+# of course, we don't need developer stuff on our production.
+poetry install --no-dev --verbose
 
 # These lines are temporary, will remove it after debugging
 echo "Let's check ourselves: test if the project's scripts [web, release] are installed"
