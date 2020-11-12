@@ -4,4 +4,4 @@ function log() {
         echo "-----> $*"
 }
 
-log "Poetry ok!"
+poetry install
