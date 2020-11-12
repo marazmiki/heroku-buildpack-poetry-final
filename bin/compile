@@ -7,6 +7,10 @@ BUILD_DIR="$1"
 CACHE_DIR="$2"
 ENV_DIR="$3"
 
+echo "Cache dir is ${CACHE_DIR}"
+echo "Build dir is ${BUILD_DIR}"
+echo "Env dir is ${ENV_DIR}"
+
 cd "$BUILD_DIR"
 
 function log() {
