@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
+# It's a very special buildpack and we expect nobody uses it for 
+# no reason. At the same time, the only reason to use it — when 
+# you use poetry. So we won't check the repo for compatibility 
+# with this buildpack, just say it's fit ;)
+
 exit 0
