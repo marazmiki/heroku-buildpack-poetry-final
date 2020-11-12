@@ -32,5 +32,5 @@ poetry install --no-dev --verbose
 echo "Let's check ourselves: test if the project's scripts [web, release] are installed"
 which web || echo "Looks like web didn't installed"
 which release || echo "Looks like release didn't installed"
-python -c 'import heroku_poetry_support' || echo "looks like the package didn't installed"
+python3 -c 'import heroku_poetry_support' || echo "looks like the package didn't installed"
 
